@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-25T21:32:03.348Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="WeZBWbP6z4kkKzUjP1mE" version="16.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-25T23:20:11.176Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="3-lDfrWpMmIqIkFbnAYo" version="16.4.3" type="github">
   <diagram id="kklVm168mB3y6DKZGk4f" name="Strona-1">
     <mxGraphModel dx="2489" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -25,10 +25,10 @@
         <mxCell id="pUXXARFLzrxqts2aBYnC-71" value="nazwisko" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-5">
           <mxGeometry y="100" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="pUXXARFLzrxqts2aBYnC-72" value="start odsiadki" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-5">
+        <mxCell id="pUXXARFLzrxqts2aBYnC-72" value="odsiadka start" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-5">
           <mxGeometry y="120" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="pUXXARFLzrxqts2aBYnC-73" value="koniec odsiadki" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-5">
+        <mxCell id="pUXXARFLzrxqts2aBYnC-73" value="odsiadka koniec" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-5">
           <mxGeometry y="140" width="200" height="20" as="geometry" />
         </mxCell>
         <mxCell id="pUXXARFLzrxqts2aBYnC-74" value="numer celi" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-5">
@@ -76,7 +76,7 @@
         <mxCell id="pUXXARFLzrxqts2aBYnC-10" value="Magazyn" style="swimlane;" vertex="1" parent="1">
           <mxGeometry x="-170" y="630" width="200" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="pUXXARFLzrxqts2aBYnC-42" value="id przedmiotu" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-10">
+        <mxCell id="pUXXARFLzrxqts2aBYnC-42" value="id //przedmiotu" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-10">
           <mxGeometry y="20" width="200" height="20" as="geometry" />
         </mxCell>
         <mxCell id="pUXXARFLzrxqts2aBYnC-43" value="nazwa" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-10">
@@ -148,7 +148,7 @@
         <mxCell id="pUXXARFLzrxqts2aBYnC-47" value="ilosc" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-15">
           <mxGeometry y="60" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="pUXXARFLzrxqts2aBYnC-48" value="skad" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-15">
+        <mxCell id="pUXXARFLzrxqts2aBYnC-48" value="magazyn (BOOL)" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-15">
           <mxGeometry y="80" width="200" height="20" as="geometry" />
         </mxCell>
         <mxCell id="pUXXARFLzrxqts2aBYnC-49" value="id pracownika" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-15">
