@@ -1,5 +1,7 @@
 package serwerKlient;
 
+import inne.Placowka;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -16,7 +18,7 @@ public class ServerW
     private static ExecutorService pool = Executors.newFixedThreadPool(4);
     Socket client;
     private static final int PORT=6666;
-
+    public static Placowka p = new Placowka();
     public static void main(String[] args) throws IOException, ClassNotFoundException
     {
         ServerSocket listenner = new ServerSocket(PORT);

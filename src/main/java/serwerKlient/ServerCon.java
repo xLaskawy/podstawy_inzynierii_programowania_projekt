@@ -2,7 +2,6 @@ package serwerKlient;
 
 import java.io.*;
 import java.net.Socket;
-import java.util.List;
 import java.util.Scanner;
 
 public class ServerCon implements Runnable

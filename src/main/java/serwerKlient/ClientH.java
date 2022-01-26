@@ -1,11 +1,12 @@
 package serwerKlient;
 
+import inne.Placowka;
+
 import java.io.*;
 import java.net.Socket;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
+
+import static serwerKlient.ServerW.p;
 
 public class ClientH implements Runnable
 {
@@ -15,6 +16,7 @@ public class ClientH implements Runnable
     private ArrayList<ClientH> clients;
     private ObjectOutputStream objectOutputStream;
     private ObjectInputStream is;
+
 
     public ClientH(Socket clientSocket, ArrayList<ClientH> clients,ObjectOutputStream outStream,ObjectInputStream inStream) throws IOException, ClassNotFoundException
     {
@@ -42,6 +44,12 @@ public class ClientH implements Runnable
                     {
                         outToAll(request.substring(firtsSpace+1));
                     }
+                }
+
+                else if(request.contains("poka"))
+                {
+                    out.println("pokazuje");
+                   // p.dodajPracownika();
                 }
 
 
