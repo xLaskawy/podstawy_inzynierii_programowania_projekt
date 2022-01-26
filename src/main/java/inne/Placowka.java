@@ -1,10 +1,11 @@
 package inne;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import zasobyLudzkie.Stanowisko;
+import zasobyLudzkie.Uzytkownik;
+
+import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Placowka
 {
@@ -91,9 +92,10 @@ public class Placowka
 
     public void test()
     {
-        String sql = "";
-
-
+        Uzytkownik u = new Uzytkownik(4,"patryk","tochuj");
+        String sql = "REPLACE INTO UZYTKOWNIK VALUES("+u.toSql()+")";
+        System.out.println("chuuuuuuuuj");
+        System.out.println(sql);
         try {
             stat.execute(sql);
         } catch (SQLException e) {
@@ -102,20 +104,61 @@ public class Placowka
         }
     }
 
-    public void dodajPracownika(int idPlacowki)
+    public void dodajPracownika(int idPlacowki,int idUzytkownika,int idStanowiska, String imie, String naziwsko, String login, String haslo)
     {
         /*
         pracownik - id idplacowki iduzytkownika imie nazwisko id stanowiska
         uzytkownik - id login haslo
          */
       //  sql.add("REPLACE INTO PLACOWKA(nazwa) VALUES ('Placowka w Katowicach') ");
-        String sql = "INSERT INTO PRACOWNIK(id_placowki,id_uzytkownika,id_stanowiska,imie,nazwisko) VALUES ('"+idPlacowki+"')";
+        String sql1 = "INSERT INTO UZYTKOWNIK(login,haslo) VALUES ('"+login+","+haslo+"')";
+        String sql2 = "INSERT INTO PRACOWNIK(id_placowki,id_uzytkownika,id_stanowiska,imie,nazwisko) VALUES ('"+idPlacowki+","+ idUzytkownika+","+ idStanowiska+","+ imie +","+ naziwsko+"')";
         try {
-            stat.execute(sql);
+            stat.execute(sql1);
+            stat.execute(sql2);
         } catch (SQLException e) {
             System.out.println("BLAD");
             e.printStackTrace();
         }
+    }
+
+    public List<Stanowisko> selectStanowiska()
+    {
+        List<Stanowisko> stanowiska = new ArrayList<>();
+
+        try {
+            ResultSet result = stat.executeQuery("SELECT * FROM STANOWISKA");
+
+            int id;
+            String nazwa;
+            while(result.next()) {
+                id = result.getInt("id");
+                nazwa = result.getString("nazwa");
+
+                stanowiska.add(new Stanowisko(id, nazwa));
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return stanowiska;
+
+
+        /*
+         List<Czytelnik> czytelnicy = new LinkedList<Czytelnik>();
+
+        ResultSet result = stat.executeQuery("SELECT * FROM czytelnicy");
+        int id;
+        String imie, nazwisko, pesel;
+        while(result.next()) {
+            id = result.getInt("id_czytelnika");
+            imie = result.getString("imie");
+            nazwisko = result.getString("nazwisko");
+            pesel = result.getString("pesel");
+            czytelnicy.add(new Czytelnik(id, imie, nazwisko, pesel));
+        }
+        */
     }
 
 

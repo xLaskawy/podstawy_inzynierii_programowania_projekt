@@ -1,6 +1,9 @@
 package serwerKlient;
 
 import inne.Placowka;
+import zasobyLudzkie.Pracownik;
+import zasobyLudzkie.Stanowisko;
+import zasobyLudzkie.Uzytkownik;
 
 import java.io.*;
 import java.net.Socket;
@@ -46,10 +49,23 @@ public class ClientH implements Runnable
                     }
                 }
 
-                else if(request.contains("poka"))
+                else if(request.contains("dodajPracownika"))
                 {
-                    out.println("pokazuje");
-                   // p.dodajPracownika();
+
+                    String imie,nazwisko;
+                    Stanowisko stanowisko;
+                    out.println("Podaj imie : ");
+                    imie = in.readLine();
+                    out.println("Podaj nazwisko : ");
+                    nazwisko = in.readLine();
+                    out.println("Wybierz stanowisko : ");
+                    out.println(p.selectStanowiska());
+                    stanowisko = p.selectStanowiska().get(in.read());
+
+
+
+
+
                 }
 
 

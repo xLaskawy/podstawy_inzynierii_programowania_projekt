@@ -106,7 +106,7 @@
         <mxCell id="pUXXARFLzrxqts2aBYnC-59" value="id placowki" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-11">
           <mxGeometry y="40" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="pUXXARFLzrxqts2aBYnC-61" value="id stanowiska" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-11">
+        <mxCell id="pUXXARFLzrxqts2aBYnC-61" value="id zasobyLudzkie" style="whiteSpace=wrap;html=1;" vertex="1" parent="pUXXARFLzrxqts2aBYnC-11">
           <mxGeometry y="120" width="200" height="20" as="geometry" />
         </mxCell>
         <mxCell id="pUXXARFLzrxqts2aBYnC-12" value="Prace" style="swimlane;" vertex="1" parent="1">

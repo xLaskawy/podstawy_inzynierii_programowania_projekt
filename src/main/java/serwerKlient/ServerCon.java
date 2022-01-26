@@ -1,5 +1,7 @@
 package serwerKlient;
 
+import zasobyLudzkie.Pracownik;
+
 import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
@@ -36,7 +38,9 @@ public class ServerCon implements Runnable
                     {
                         System.out.println("All messages:");
                     }
+
                     System.out.println("[S]>> " + serverResponse);
+
                     if (serverResponse == "koniec") break;
                 }
             }
