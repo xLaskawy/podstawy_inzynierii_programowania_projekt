@@ -12,7 +12,7 @@ public class Placowka
         clasa odpowiedzialna za osbloge z baza danych
      */
     public static final String DRIVER = "org.sqlite.JDBC";
-    public static final String DB_URL = "jdbc:sqlite:/D:\\Notatki\\Java IntelliJ\\inzynieria\\podstawy_inzynierii_programowania_projekt\\baza_danych\\bazadanych.db";
+    public static final String DB_URL = "jdbc:sqlite:/C:\\Users\\wloda\\intelii_pro\\pro2\\baza_danych\\bazadanych.db";
 
     private Connection conn;
     private Statement stat;
